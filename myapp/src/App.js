@@ -1,17 +1,11 @@
 
 import './App.css';
-import { header } from './header';
-import { nav } from './nav';
-import { main } from './main';
-import { footer } from './footer';
+import SvgComponent from './header';
 
 function App() {
   return (
     <>
-    <header />
-    <nav />
-    <main />
-    <footer></footer>
+    <SvgComponent/>
     </>
   );
 }
