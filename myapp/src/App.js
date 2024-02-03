@@ -1,13 +1,14 @@
-
 import './App.css';
-import SvgComponent from './header';
-import Navigation from './nav';
+import Header from './components/header'
+import Footer from './components/footer';
+import Navigation from './components/navigation'
 
 function App() {
   return (
     <>
     <Navigation/>
-    <SvgComponent/>
+    <Header/>
+    <Footer/>
     </>
   );
 }

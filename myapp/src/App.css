@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+}
+
+.logo {
+  margin-right: auto;
+  padding-left: 250px;
+}
+
+.nav-items {
+  display: flex;
+  list-style: none;
+  margin-left: auto;
+  padding-right: 250px;
+}
+
+.nav-items li {
+  margin-left: 20px;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black
+}
+
+.nav-items a:hover {
+  font-weight: 700;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #495e57;
+}
+
+
+
+.header-content h1 {
+  font-size: 64px;
+  color: #f4ce14;
+  font-family: 'Markazi Text', serif;
+  padding: 0 0 0 250px;
+  margin: 0 0 0 250px;
+}
+
+.header-content h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 40px;
+  color: #edefee;
+  padding: 0 0 0 250px;
+  margin: 0 0 0 250px;
+}
+
+.header-content p {
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  color: #edefee;
+  padding: 0 0 0 250px;
+  margin: 0 0 0 250px;
+}
+
+.header-content button {
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.header-content button:hover {
+  background-color: darkblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-image img {
+  height: auto;
 }
