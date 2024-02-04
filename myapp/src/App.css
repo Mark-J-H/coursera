@@ -2,29 +2,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
 
-.navbar {
+.navbar-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
   font-family: 'Markazi Text', serif;
   font-size: 24px;
 }
 
-.logo {
-  margin-right: auto;
-  padding-left: 250px;
+.nav-logo {
+  margin-left: 20%;
+  justify-content: flex-start;
 }
 
 .nav-items {
   display: flex;
   list-style: none;
-  margin-left: auto;
-  padding-right: 250px;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 20%;
 }
 
 .nav-items li {
-  margin-left: 20px;
+  padding-right: 10px;
 }
 
 .nav-items a {
@@ -40,45 +41,89 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: #495e57;
+  max-height: 250px;
 }
 
-
+.header-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+  "title image"
+  "subtitle image"
+  "writing image"
+  "button image";
+  margin-left: 40%;
+  max-height: 250px;
+}
 
 .header-content h1 {
+  grid-area: title;
   font-size: 64px;
   color: #f4ce14;
   font-family: 'Markazi Text', serif;
-  padding: 0 0 0 250px;
-  margin: 0 0 0 250px;
+  margin-top: .2em;
+  margin-bottom: -.5em;
 }
 
 .header-content h2 {
+  grid-area: subtitle;
   font-family: 'Markazi Text', serif;
   font-size: 40px;
   color: #edefee;
-  padding: 0 0 0 250px;
-  margin: 0 0 0 250px;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 .header-content p {
+  grid-area: writing;
   font-family: 'Markazi Text', serif;
   font-size: 24px;
   color: #edefee;
-  padding: 0 0 0 250px;
-  margin: 0 0 0 250px;
+  margin-top: .2em;
+  margin-bottom: .2em;
 }
 
 .header-content button {
-  color: white;
+  grid-area: button;
+  background-color: #f4ce14;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  padding: 1em;
+  margin-top: .2em;
+  margin-bottom: 1em;
+  max-width: 20em;
+}
+
+.header-image {
+  display: flex;
+  justify-content: flex-end; 
+  margin-right: 40%; 
+}
+
+.header-image img {
+  height: 400px;
 }
 
 .header-content button:hover {
   background-color: darkblue;
 }
 
-.header-image img {
-  height: auto;
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 10em;
+}
+
+.main button {
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 1em 2em 1em 1em;
+  max-width: 20em;
 }

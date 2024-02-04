@@ -1,9 +1,9 @@
-import { ReactComponent as Logo } from './logo.svg';
+import { ReactComponent as Logo } from '../logo.svg';
 
 function Navigation() {
     return (
-    <nav class="navbar">
-      <a href="/" class="logo"><Logo /></a>
+    <nav className="navbar-container">
+      <a href="/" className="nav-logo"><Logo /></a>
       <ul className="nav-items">
         <li><a href="/Home">Homepage</a></li>
         <li><a href="/About">About</a></li>
