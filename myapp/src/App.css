@@ -4,101 +4,91 @@
 
 .navbar-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   font-family: 'Markazi Text', serif;
   font-size: 24px;
+  height: 4em;
 }
 
-.nav-logo {
-  margin-left: 20%;
-  justify-content: flex-start;
+.navbar-logo {
+  margin-left: 20vw;
 }
 
-.nav-items {
+.navbar-items {
   display: flex;
-  list-style: none;
   flex-direction: row;
-  justify-content: flex-end;
-  margin-right: 20%;
+  list-style: none;
+  margin-right: 20vw;
 }
 
-.nav-items li {
-  padding-right: 10px;
+.navbar-items li {
+  padding-left: 1em;
 }
 
-.nav-items a {
+.navbar-items a {
   text-decoration: none;
-  color: black
+  color: #333333;
 }
 
-.nav-items a:hover {
-  font-weight: 700;
+.navbar-items a:hover {
+  color: #ee9972;
 }
 
 .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   background-color: #495e57;
-  max-height: 350px;
+  max-height: 375px;
 }
 
 .header-content {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-  "title image"
-  "subtitle image"
-  "writing image"
-  "button image";
-  margin-left: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20vw;
   max-height: 250px;
+  font-family: 'Markazi Text', serif;
 }
 
 .header-content h1 {
-  grid-area: title;
   font-size: 64px;
   color: #f4ce14;
   font-family: 'Markazi Text', serif;
-  margin-top: .2em;
+  margin-top: .7em;
   margin-bottom: -.5em;
 }
 
 .header-content h2 {
-  grid-area: subtitle;
   font-family: 'Markazi Text', serif;
   font-size: 40px;
   color: #edefee;
-  margin-top: .2em;
+  margin-top: .4em;
   margin-bottom: .2em;
 }
 
 .header-content p {
-  grid-area: writing;
   font-family: 'Markazi Text', serif;
   font-size: 24px;
   color: #edefee;
   margin-top: .2em;
   margin-bottom: .2em;
+  max-width: 35vw;
 }
 
 .header-content button {
-  grid-area: button;
   background-color: #f4ce14;
   border: none;
+  font-family: 'Markazi Text', serif;
   border-radius: 10px;
   cursor: pointer;
   padding: 1em;
-  margin-top: .2em;
+  margin-top: 2em;
   margin-bottom: 1em;
   max-width: 20em;
 }
 
 .header-image {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 40%;
+  margin-right: 20vw;
   margin-top: 2em;
   object-fit: cover;
 }
@@ -106,24 +96,24 @@
 .header-image img {
   height: 25em;
   width: 20em;
-  border-radius: 25px;
+  border-radius: 10px;
 }
 
 .header-content button:hover {
   background-color: darkblue;
 }
 
-.main {
+.specials {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 7em;
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-top: 7vw;
 }
 
-.main button {
+.specials button {
   background-color: #f4ce14;
   border: none;
   border-radius: 10px;
@@ -132,59 +122,51 @@
   max-width: 20em;
 }
 
-.cards {
+.specials-cards {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1em;
+  gap: 1vw;
   margin-top: 2em;
 }
 
-.cards img {
-  width: 17em;
-  height: 17em;
+.specials-cards img {
+  width: 19vw;
+  height: 19vw;
   border-radius: 10px;
   object-fit: cover;
 }
 
-.card1 {
+.specials-card1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #edefee;
-  max-width: 17em;
+  width: 19vw;
 }
 
-.card2 {
+.specials-card2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #edefee;
-  max-width: 17em;
+  width: 19vw;
 }
 
-.card3 {
+.specials-card3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #edefee;
-  max-width: 17em;
+  width: 19vw;
 }
 
-.card4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #edefee;
-  max-width: 17em;
-}
-
-.card-description {
+.specials-card-description {
   text-align: center;
-  padding: 0 2em;
+  padding: 0 1vw;
 }
 
-.card-item {
+.specials-card-item {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -192,9 +174,14 @@
   gap: 2em;
 }
 
+.specials-name {
+  font-weight: 700;
+}
+
 .main-testimonials {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 5em;
+  padding-bottom: 2em;
 }
 
 .testimonial-cards {
@@ -202,7 +189,6 @@
   flex-direction: row;
   justify-content: center;
   gap: 1em;
-  margin-top: 2em;
 }
 
 .testimonial-cards img {
@@ -215,36 +201,110 @@
 .testimonial-card-1 {
   display: flex;
   flex-direction: column;
-  align-items: start;
   background-color: #edefee;
-  max-width: 15em;
+  width: 16em;
   padding-left: 1em;
 }
 
 .testimonial-card-2 {
   display: flex;
   flex-direction: column;
-  align-items: start;
   background-color: #edefee;
-  max-width: 15em;
+  width: 16em;
   padding-left: 1em;
 }
 
 .testimonial-card-3 {
   display: flex;
   flex-direction: column;
-  align-items: start;
   background-color: #edefee;
-  max-width: 15em;
+  width: 16em;
   padding-left: 1em;
 }
 
 .testimonial-card-4 {
   display: flex;
   flex-direction: column;
-  align-items: start;
   background-color: #edefee;
-  max-width: 15em;
+  width: 16em;
   padding-left: 1em;
 }
 
+.testimonials-card-item {
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  align-items: center;
+}
+
+.testimonial-rating img {
+  height: 1.5em;
+  width: 1.5em;
+  padding: .5em 0;
+}
+
+.about-container {
+  display: flex;
+  padding-top: 100px;
+}
+
+.about-image {
+  margin-right: 250px;
+}
+
+.about-image img {
+  width: 250px;
+  height: 250px;
+}
+
+.about-content {
+  margin-left: 250px;
+}
+
+.about-content p {
+  font-size: 16px;
+  text-wrap: wrap;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Markazi Text', serif;
+  font-size: 24px;
+  width: 100%;
+  padding-top: 100px;
+}
+
+.footer-image {
+  margin-left: 30%;
+}
+
+.footer-image img {
+  width: 250px;
+  height: 250px;
+}
+
+.footer-content {
+  display: flex;
+  margin-right: 30%;
+  gap: 10px;
+  text-align: center;
+}
+
+.footer-category h4 {
+  margin-bottom: 10px;
+}
+
+.footer-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  font-size: 16px;
+}

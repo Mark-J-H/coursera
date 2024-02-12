@@ -11,46 +11,46 @@ function Main() {
 function Specials() {
 	return (
 		<>
-			<div className="main">
-				<h1>This weeks specials!</h1>
+			<div className="specials">
+				<h1>Specials</h1>
 				<button>Online Menu</button>
 			</div>
-			<div className="cards">
-				<div className="card1">
+			<div className="specials-cards">
+				<div className="specials-card1">
 					<img src="/greeksalad.jpg" alt="Header" />
-					<div className="card-item">
-						<p>Greek Salad</p>
+					<div className="specials-card-item">
+						<p className="specials-name">Greek Salad</p>
 						<p>$12.99</p>
 					</div>
-					<p className="card-description">
-						aaaaaaa aaaaaa aaaaf eufneu fneiuf neifne fineifn eif nefiunefienf
-						iefnienfeifn
+					<p className="specials-card-description">
+						Here is some important information about the food that is in the
+						image
 					</p>
-					<p>Card1</p>
+					<p className="special-name">Order a delivery</p>
 				</div>
-				<div className="card2">
+				<div className="specials-card2">
 					<img src="/bruchetta.svg" alt="Header" />
-					<div className="card-item">
-						<p>Greek Salad</p>
+					<div className="specials-card-item">
+						<p className="specials-name">Greek Salad</p>
 						<p>$12.99</p>
 					</div>
-					<p className="card-description">
-						{" "}
-						afeuf neuf neiufneif efineifn eifnefiu nefienfi efnie nfeifn
+					<p className="specials-card-description">
+						Here is some important information about the food that is in the
+						image
 					</p>
-					<p>Card1</p>
+					<p className="special-name">Order a delivery</p>
 				</div>
-				<div className="card3">
+				<div className="specials-card3">
 					<img src="/lemondessert.jpg" alt="Header" />
-					<div className="card-item">
-						<p>Greek Salad</p>
+					<div className="specials-card-item">
+						<p className="specials-name">Greek Salad</p>
 						<p>$12.99</p>
 					</div>
-					<p className="card-description">
-						aaa aaaaaa aaaaa aaafeufneu fneiu fneifn efine ifneifne fiune fie
-						nfiefn ienfeifn
+					<p className="specials-card-description">
+						Here is some important information about the food that is in the
+						image
 					</p>
-					<p>Card1</p>
+					<p className="special-name">Order a delivery</p>
 				</div>
 			</div>
 		</>
@@ -65,47 +65,60 @@ function Testimonials() {
 			</div>
 			<div className="testimonial-cards">
 				<div className="testimonial-card-1">
-					<p>Greek Salad</p>
-					<div className="card-item">
-						<img src="/greeksalad.jpg" alt="Header" />
+					<div className="testimonial-rating">
+						<img src="/star.jpg" alt="star" />
+					</div>
+					<div className="testimonials-card-item">
+						<img src="/testimonial1.jpg" alt="test1" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
-						aaaaaaa aaaaaa aaaaf eufneu fneiuf neifne fineifn eif nefiunefienf
-						iefnienfeifn
+						This is a basic review of the restaurant
 					</p>
 				</div>
 				<div className="testimonial-card-2">
-        <p>Greek Salad</p>
-					<div className="card-item">
-						<img src="/greeksalad.jpg" alt="Header" />
+					<div className="testimonial-rating">
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+					</div>
+					<div className="testimonials-card-item">
+						<img src="/testimonial2.jpg" alt="test2" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
-						aaaaaaa aaaaaa aaaaf eufneu fneiuf neifne fineifn eif nefiunefienf
-						iefnienfeifn
+						This is a basic review of the restaurant
 					</p>
 				</div>
 				<div className="testimonial-card-3">
-        <p>Greek Salad</p>
-					<div className="card-item">
-						<img src="/greeksalad.jpg" alt="Header" />
+					<div className="testimonial-rating">
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+					</div>
+					<div className="testimonials-card-item">
+						<img src="/testimonial3.jpg" alt="test3" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
-						aaaaaaa aaaaaa aaaaf eufneu fneiuf neifne fineifn eif nefiunefienf
-						iefnienfeifn
+						This is a basic review of the restaurant
 					</p>
 				</div>
 				<div className="testimonial-card-4">
-        <p>Greek Salad</p>
-					<div className="card-item">
-						<img src="/greeksalad.jpg" alt="Header" />
+					<div className="testimonial-rating">
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+						<img src="/star.jpg" alt="star" />
+					</div>
+					<div className="testimonials-card-item">
+						<img src="/testimonial4.jpg" alt="test4" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
-						aaaaaaa aaaaaa aaaaf eufneu fneiuf neifne fineifn eif nefiunefienf
-						iefnienfeifn
+						This is a basic review of the restaurant
 					</p>
 				</div>
 			</div>
@@ -116,46 +129,17 @@ function Testimonials() {
 function About() {
 	return (
 		<>
-			<div className="main">
-				<h1>This weeks specials!</h1>
-				<button>Online Menu</button>
-			</div>
-			<div className="cards">
-				<div className="card1">
-					<img src="/greeksalad.jpg" alt="Header" />
-					<div className="card-item">
-						<p>Greek Salad</p>
-						<p>$12.99</p>
-					</div>
-					<p className="card-description">
-						aaaaaaa aaaaaa aaaaf eufneu fneiuf neifne fineifn eif nefiunefienf
-						iefnienfeifn
+			<div className="about-container">
+				<div className="about-content">
+					<h1>Little Lemon</h1>
+					<h2>Chicago</h2>
+					<p>
+						This is some text that describes the content or purpose of the hero
+						section.
 					</p>
-					<p>Card1</p>
 				</div>
-				<div className="card2">
-					<img src="/bruchetta.svg" alt="Header" />
-					<div className="card-item">
-						<p>Greek Salad</p>
-						<p>$12.99</p>
-					</div>
-					<p className="card-description">
-						{" "}
-						afeuf neuf neiufneif efineifn eifnefiu nefienfi efnie nfeifn
-					</p>
-					<p>Card1</p>
-				</div>
-				<div className="card3">
-					<img src="/lemondessert.jpg" alt="Header" />
-					<div className="card-item">
-						<p>Greek Salad</p>
-						<p>$12.99</p>
-					</div>
-					<p className="card-description">
-						aaa aaaaaa aaaaa aaafeufneu fneiu fneifn efine ifneifne fiune fie
-						nfiefn ienfeifn
-					</p>
-					<p>Card1</p>
+				<div className="about-image">
+					<img src="/restauranfood.jpg" alt="Header" />
 				</div>
 			</div>
 		</>
