@@ -133,13 +133,10 @@ function About() {
 				<div className="about-content">
 					<h1>Little Lemon</h1>
 					<h2>Chicago</h2>
-					<p>
-						This is some text that describes the content or purpose of the hero
-						section.
-					</p>
+					<p>This is some text.</p>
 				</div>
 				<div className="about-image">
-					<img src="/restauranfood.jpg" alt="Header" />
+					<img src="/restaurant.jpg" alt="Header" />
 				</div>
 			</div>
 		</>

@@ -2,7 +2,7 @@ function Footer() {
 	return (
 		<div className="footer-container">
 			<div className="footer-image">
-				<img src="/restauranfood.jpg" alt="Header" />
+				<img src="/mario.jpg" alt="Header" />
 			</div>
 			<div className="footer-content">
 				<div className="footer-category">
