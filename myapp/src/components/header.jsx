@@ -9,7 +9,7 @@ function Header() {
               <button>Reserve Your Table</button>
           </div>
           <div className="header-image">
-              <img src="/restauranfood.jpg" alt="Header" />
+              <img src="/assets/restauranfood.jpg" alt="Header" />
           </div>
       </div>
   );
