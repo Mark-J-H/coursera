@@ -1,8 +1,10 @@
+import FooterImage from '../assets/footer.jpg'
+
 function Footer() {
 	return (
 		<div className="footer-container">
 			<div className="footer-image">
-				<img src="/assets/mario.jpg" alt="Header" />
+				<img src={FooterImage} alt="Header" />
 			</div>
 			<div className="footer-content">
 				<div className="footer-category">

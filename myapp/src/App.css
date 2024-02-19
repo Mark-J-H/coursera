@@ -2,6 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
 
 
+
+@media screen and (min-width: 768px) {
+  .container {
+  margin-left: 10em;
+  margin-right: 10em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+  margin-left: 2em;
+  margin-right: 2em;
+  }
+}
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -11,15 +26,10 @@
   height: 4em;
 }
 
-.navbar-logo {
-  margin-left: 20vw;
-}
-
 .navbar-items {
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin-right: 20vw;
 }
 
 .navbar-items li {
@@ -35,6 +45,57 @@
   color: #ee9972;
 }
 
+.burger-menu {
+  display: none;
+}
+
+/* this is the code for the burger menu */
+
+@media screen and (max-width: 768px) {
+
+  /* display the burger menu */
+  .burger-menu {
+    display: block;
+  }
+
+  /* create three lines with three divs */
+  .burger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+  }
+
+  /* shapes the navbar vertically */
+  .navbar-items {
+    position: absolute;
+    right: 0;
+    top: 60px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f4ce14;
+    display: none;
+  }
+
+  /* centers the text of each link */
+  .navbar-items li {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* conditionally renders the navbar items when state is true */
+  .navbar-items.nav-true {
+    display: flex;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+  margin-left: 0em;
+  margin-right: 0em;
+  }
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -45,7 +106,7 @@
 .header-content {
   display: flex;
   flex-direction: column;
-  margin-left: 20vw;
+  margin-left: 10em;
   max-height: 250px;
   font-family: 'Markazi Text', serif;
 }
@@ -54,7 +115,6 @@
   font-size: 64px;
   color: #f4ce14;
   font-family: 'Markazi Text', serif;
-  margin-top: .7em;
   margin-bottom: -.5em;
 }
 
@@ -78,6 +138,7 @@
 .header-content button {
   background-color: #f4ce14;
   border: none;
+  font-size: 18px;
   font-family: 'Markazi Text', serif;
   border-radius: 10px;
   cursor: pointer;
@@ -87,8 +148,14 @@
   max-width: 20em;
 }
 
+@media screen and (max-width: 768px) {
+  .header-image {
+    display: none;
+  }
+}
+
 .header-image {
-  margin-right: 20vw;
+  margin-right: 10em;
   margin-top: 2em;
   object-fit: cover;
 }
@@ -99,8 +166,11 @@
   border-radius: 10px;
 }
 
-.header-content button:hover {
-  background-color: darkblue;
+
+.header-image img {
+  height: 25em;
+  width: 20em;
+  border-radius: 10px;
 }
 
 .specials {
@@ -108,9 +178,9 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-left: 20vw;
-  padding-right: 20vw;
-  padding-top: 7vw;
+  padding-left: 10em;
+  padding-right: 10em;
+  padding-top: 5em;
 }
 
 .specials button {
@@ -126,15 +196,23 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1vw;
+  gap: 1em;
   margin-top: 2em;
 }
 
 .specials-cards img {
-  width: 19vw;
-  height: 19vw;
+  display:flex;
+  width: 20em;
+  height: 20em;
   border-radius: 10px;
   object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .specials-cards img {
+    width: 50%;
+    height: auto;
+  }
 }
 
 .specials-card1 {
@@ -142,7 +220,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #edefee;
-  width: 19vw;
+  width: 25em;
 }
 
 .specials-card2 {
@@ -150,7 +228,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #edefee;
-  width: 19vw;
+  width: 25em;
 }
 
 .specials-card3 {
@@ -158,7 +236,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #edefee;
-  width: 19vw;
+  width: 25em;
 }
 
 .specials-card-description {

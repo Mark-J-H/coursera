@@ -1,3 +1,4 @@
+import HeroImage from '../assets/hero.jpg'
 
 function Header() {
   return (
@@ -9,7 +10,7 @@ function Header() {
               <button>Reserve Your Table</button>
           </div>
           <div className="header-image">
-              <img src="/assets/restauranfood.jpg" alt="Header" />
+              <img src={HeroImage} alt="Header" />
           </div>
       </div>
   );

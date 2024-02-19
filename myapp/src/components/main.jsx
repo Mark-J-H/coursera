@@ -1,3 +1,13 @@
+import GreekSalad from '../assets/greeksalad.jpg'
+import Bruchetta from '../assets/bruchetta.svg'
+import LemonDessert from '../assets/lemondessert.jpg'
+import Star from '../assets/star.jpg'
+import TestimonialImage1 from '../assets/testimonial1.jpg'
+import TestimonialImage2 from '../assets/testimonial2.jpg'
+import TestimonialImage3 from '../assets/testimonial3.jpg'
+import TestimonialImage4 from '../assets/testimonial4.jpg'
+import AboutImage from '../assets/aboutimage.jpg'
+
 function Main() {
 	return (
 		<>
@@ -17,7 +27,7 @@ function Specials() {
 			</div>
 			<div className="specials-cards">
 				<div className="specials-card1">
-					<img src="assets/greeksalad.jpg" alt="Header" />
+					<img src={GreekSalad} alt="Header" />
 					<div className="specials-card-item">
 						<p className="specials-name">Greek Salad</p>
 						<p>$12.99</p>
@@ -29,7 +39,7 @@ function Specials() {
 					<p className="special-name">Order a delivery</p>
 				</div>
 				<div className="specials-card2">
-					<img src="assets/bruchetta.svg" alt="Header" />
+					<img src={Bruchetta} alt="Header" />
 					<div className="specials-card-item">
 						<p className="specials-name">Greek Salad</p>
 						<p>$12.99</p>
@@ -41,7 +51,7 @@ function Specials() {
 					<p className="special-name">Order a delivery</p>
 				</div>
 				<div className="specials-card3">
-					<img src="assets/lemondessert.jpg" alt="Header" />
+					<img src={LemonDessert} alt="Header" />
 					<div className="specials-card-item">
 						<p className="specials-name">Greek Salad</p>
 						<p>$12.99</p>
@@ -66,10 +76,10 @@ function Testimonials() {
 			<div className="testimonial-cards">
 				<div className="testimonial-card-1">
 					<div className="testimonial-rating">
-						<img src="assets/star.jpg" alt="star" />
+						<img src={Star} alt="star" />
 					</div>
 					<div className="testimonials-card-item">
-						<img src="assets/testimonial1.jpg" alt="test1" />
+						<img src={TestimonialImage1} alt="testimonial" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
@@ -78,12 +88,11 @@ function Testimonials() {
 				</div>
 				<div className="testimonial-card-2">
 					<div className="testimonial-rating">
-						<img src="assets/star.jpg" alt="star" />
-						<img src="assets/star.jpg" alt="star" />
-						<img src="assets/star.jpg" alt="star" />
+					<img src={Star} alt="star" />
+					<img src={Star} alt="star" />					
 					</div>
 					<div className="testimonials-card-item">
-						<img src="assets/testimonial2.jpg" alt="test2" />
+					<img src={TestimonialImage2} alt="testimonial" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
@@ -92,13 +101,12 @@ function Testimonials() {
 				</div>
 				<div className="testimonial-card-3">
 					<div className="testimonial-rating">
-						<img src="assets/star.jpg" alt="star" />
-						<img src="assets/star.jpg" alt="star" />
-						<img src="assets/star.jpg" alt="star" />
-						<img src="assets/star.jpg" alt="star" />
+					<img src={Star} alt="star" />
+					<img src={Star} alt="star" />
+					<img src={Star} alt="star" />
 					</div>
 					<div className="testimonials-card-item">
-						<img src="assets/testimonial3.jpg" alt="test3" />
+					<img src={TestimonialImage3} alt="testimonial" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
@@ -107,14 +115,13 @@ function Testimonials() {
 				</div>
 				<div className="testimonial-card-4">
 					<div className="testimonial-rating">
-					<img src="assets/star.jpg" alt="star" />
-					<img src="assets/star.jpg" alt="star" />
-					<img src="assets/star.jpg" alt="star" />
-					<img src="assets/star.jpg" alt="star" />
-					<img src="assets/star.jpg" alt="star" />
+					<img src={Star} alt="star" />
+					<img src={Star} alt="star" />
+					<img src={Star} alt="star" />
+					<img src={Star} alt="star" />
 					</div>
 					<div className="testimonials-card-item">
-						<img src="assets/testimonial4.jpg" alt="test4" />
+					<img src={TestimonialImage4} alt="testimonial" />
 						<p>hi</p>
 					</div>
 					<p className="testimonial-card-description">
@@ -136,7 +143,7 @@ function About() {
 					<p>This is some text.</p>
 				</div>
 				<div className="about-image">
-					<img src="assets/restaurant.jpg" alt="Header" />
+					<img src={AboutImage} alt="Header" />
 				</div>
 			</div>
 		</>
