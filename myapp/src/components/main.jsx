@@ -1,6 +1,6 @@
 import GreekSalad from '../assets/greeksalad.jpg'
 import Bruchetta from '../assets/bruchetta.svg'
-import LemonDessert from '../assets/lemondessert.jpg'
+import Pasta from '../assets/pasta.jpg'
 import Star from '../assets/star.jpg'
 import TestimonialImage1 from '../assets/testimonial1.jpg'
 import TestimonialImage2 from '../assets/testimonial2.jpg'
@@ -11,9 +11,9 @@ import AboutImage from '../assets/aboutimage.jpg'
 function Main() {
 	return (
 		<>
-			<Specials />
-			<Testimonials />
-			<About />
+		<Specials />
+		<Testimonials/>
+		<About/>
 		</>
 	);
 }
@@ -21,7 +21,7 @@ function Main() {
 function Specials() {
 	return (
 		<>
-			<div className="specials">
+			<div className="specials-title-and-button">
 				<h1>Specials</h1>
 				<button>Online Menu</button>
 			</div>
@@ -30,37 +30,37 @@ function Specials() {
 					<img src={GreekSalad} alt="Header" />
 					<div className="specials-card-item">
 						<p className="specials-name">Greek Salad</p>
-						<p>$12.99</p>
+						<p className="specials-price">$12.99</p>
 					</div>
 					<p className="specials-card-description">
 						Here is some important information about the food that is in the
 						image
 					</p>
-					<p className="special-name">Order a delivery</p>
+					<p className="specials-delivery">Order a delivery</p>
 				</div>
 				<div className="specials-card2">
 					<img src={Bruchetta} alt="Header" />
 					<div className="specials-card-item">
-						<p className="specials-name">Greek Salad</p>
-						<p>$12.99</p>
+						<p className="specials-name">Bruschetta</p>
+						<p className="specials-price">$12.99</p>
 					</div>
 					<p className="specials-card-description">
 						Here is some important information about the food that is in the
 						image
 					</p>
-					<p className="special-name">Order a delivery</p>
+					<p className="specials-delivery">Order a delivery</p>
 				</div>
 				<div className="specials-card3">
-					<img src={LemonDessert} alt="Header" />
+					<img src={Pasta} alt="Header" />
 					<div className="specials-card-item">
-						<p className="specials-name">Greek Salad</p>
-						<p>$12.99</p>
+						<p className="specials-name">Pollo Pasta</p>
+						<p className="specials-price">$12.99</p>
 					</div>
 					<p className="specials-card-description">
 						Here is some important information about the food that is in the
 						image
 					</p>
-					<p className="special-name">Order a delivery</p>
+					<p className="specials-delivery">Order a delivery</p>
 				</div>
 			</div>
 		</>
