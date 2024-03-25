@@ -1,6 +1,6 @@
 function Login () {
     return (
-    <p>Hi</p>
+    <p></p>
     )
 }
 

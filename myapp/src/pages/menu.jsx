@@ -1,6 +1,6 @@
 function Menu () {
     return (
-    <p>Hi</p>
+    <p></p>
     )
 }
 

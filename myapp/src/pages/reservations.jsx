@@ -1,6 +1,6 @@
 function Reservations () {
     return (
-    <p>Hi</p>
+    <p></p>
     )
 }
 

@@ -93,7 +93,7 @@ function Testimonials() {
 					</div>
 					<div className="testimonials-card-item">
 					<img src={TestimonialImage2} alt="testimonial" />
-						<p>hi</p>
+						<p>his</p>
 					</div>
 					<p className="testimonial-card-description">
 						This is a basic review of the restaurant
@@ -107,7 +107,7 @@ function Testimonials() {
 					</div>
 					<div className="testimonials-card-item">
 					<img src={TestimonialImage3} alt="testimonial" />
-						<p>hi</p>
+						<p>his</p>
 					</div>
 					<p className="testimonial-card-description">
 						This is a basic review of the restaurant

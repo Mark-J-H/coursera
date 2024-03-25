@@ -1,6 +1,6 @@
 function About () {
     return (
-    <p>Hi</p>
+    <p></p>
     )
 }
 

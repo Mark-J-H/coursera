@@ -1,6 +1,6 @@
 function Homepage () {
     return (
-    <p>Hi</p>
+    <p></p>
     )
 }
 
