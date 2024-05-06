@@ -7,9 +7,24 @@ import Reservations from "../pages/reservations";
 import Menu from "../pages/menu";
 import Order from "../pages/order";
 import About from "../pages/about";
+import { useEffect } from "react";
 
 function Navigation() {
 	const [isSidebarVisible, setIsSidebarVisible] = useState(false);
+
+    useEffect(() => {
+        function handleResize() {
+            if (window.innerWidth > 1024) {
+                setIsSidebarVisible(false); 
+			}
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
 
 	function toggleSidebar() {
 		setIsSidebarVisible(!isSidebarVisible);
@@ -23,7 +38,7 @@ function Navigation() {
 					<Link to="/">
 						<img src={Logo} alt="logo" />
 					</Link>
-					<div className="burger" onClick={toggleSidebar}>
+					<div className={`burger ${isSidebarVisible ? 'rotate' : ''}`} onClick={toggleSidebar}>
 						☰
 					</div>
 					<ul id="nav-list" className={`navbar-links ${isSidebarVisible ? 'show' : ''}`}>

@@ -1,28 +1,27 @@
-import GreekSalad from '../assets/greeksalad.jpg'
-import Bruchetta from '../assets/bruchetta.svg'
-import Pasta from '../assets/pasta.jpg'
-import Star from '../assets/star.jpg'
-import TestimonialImage1 from '../assets/testimonial1.jpg'
-import TestimonialImage2 from '../assets/testimonial2.jpg'
-import TestimonialImage3 from '../assets/testimonial3.jpg'
-import TestimonialImage4 from '../assets/testimonial4.jpg'
-import AboutImage from '../assets/aboutimage.jpg'
+import GreekSalad from "../assets/greeksalad.jpg";
+import Bruchetta from "../assets/bruchetta.svg";
+import Pasta from "../assets/pasta.jpg";
+import Star from "../assets/star.jpg";
+import TestimonialImage1 from "../assets/testimonial1.jpg";
+import TestimonialImage2 from "../assets/testimonial2.jpg";
+import TestimonialImage3 from "../assets/testimonial3.jpg";
+import TestimonialImage4 from "../assets/testimonial4.jpg";
+import AboutImage from "../assets/aboutimage.jpg";
 
 function Main() {
 	return (
 		<>
-		<Specials />
-		<Testimonials/>
-		<About/>
+			<Specials />
+			<Test />
 		</>
 	);
 }
 
 function Specials() {
 	return (
-		<>
+		<div className="all-specials">
 			<div className="specials-title-and-button">
-				<h1>Specials</h1>
+				<h1>This Weeks Specials!</h1>
 				<button>Online Menu</button>
 			</div>
 			<div className="specials-cards">
@@ -63,7 +62,55 @@ function Specials() {
 					<p className="specials-delivery">Order a delivery</p>
 				</div>
 			</div>
-		</>
+		</div>
+	);
+}
+
+function Test() {
+	return (
+		<div className="all-testimonials">
+			<div className="testimonials-title-and-button">
+				<h1>Testimonials</h1>
+			</div>
+			<div className="testimonials-cards">
+				<div className="testimonials-card1">
+					<div className="testimonials-rating">
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+					</div>
+					<img src={TestimonialImage1} alt="testimonial" />
+					<p className="testimonials-card-description">
+						I came with my friends for my birthday and everyone had a great
+						time!
+					</p>
+				</div>
+				<div className="testimonials-card2">
+					<div className="testimonials-rating">
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+					</div>
+					<img src={TestimonialImage2} alt="testimonial" />
+					<p className="testimonials-card-description">
+						Great Food! Great People! Love it! Would highly recommend!
+					</p>
+				</div>
+				<div className="testimonials-card3">
+					<div className="testimonials-rating">
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+					</div>
+					<img src={TestimonialImage3} alt="testimonial" />
+					<p className="testimonials-card-description">
+						Very reasonably priced for the service. I would recommend to
+						everyone.
+					</p>
+				</div>
+			</div>
+		</div>
 	);
 }
 
@@ -72,61 +119,52 @@ function Testimonials() {
 		<>
 			<div className="main-testimonials">
 				<h1>Testimonials</h1>
-			</div>
-			<div className="testimonial-cards">
-				<div className="testimonial-card-1">
-					<div className="testimonial-rating">
-						<img src={Star} alt="star" />
+				<div className="testimonial-cards">
+					<div className="testimonial-card-1">
+						<div className="testimonial-rating">
+							<img src={Star} alt="star" />
+							<img src={Star} alt="star" />
+							<img src={Star} alt="star" />
+						</div>
+
+						<div className="testimonials-card-item">
+							<img src={TestimonialImage1} alt="testimonial" />
+
+							<p className="testimonial-card-description">
+								Great Food! Great People! Love it! Would highly recommend!
+							</p>
+						</div>
 					</div>
-					<div className="testimonials-card-item">
-						<img src={TestimonialImage1} alt="testimonial" />
-						<p>hi</p>
+					<div className="testimonial-card-2">
+						<div className="testimonial-rating">
+							<img src={Star} alt="star" />
+							<img src={Star} alt="star" />
+							<img src={Star} alt="star" />
+						</div>
+						<div className="testimonials-card-item">
+							<img src={TestimonialImage2} alt="testimonial" />
+
+							<p className="testimonial-card-description">
+								I came with my friends for my birthday and everyone had a great
+								time!
+							</p>
+						</div>
 					</div>
-					<p className="testimonial-card-description">
-						This is a basic review of the restaurant
-					</p>
-				</div>
-				<div className="testimonial-card-2">
-					<div className="testimonial-rating">
-					<img src={Star} alt="star" />
-					<img src={Star} alt="star" />					
+					<div className="testimonial-card-3">
+						<div className="testimonial-rating">
+							<img src={Star} alt="star" />
+							<img src={Star} alt="star" />
+							<img src={Star} alt="star" />
+						</div>
+						<div className="testimonials-card-item">
+							<img src={TestimonialImage3} alt="testimonial" />
+
+							<p className="testimonial-card-description">
+								Very reasonably priced for the service. I would recommend to
+								everyone.
+							</p>
+						</div>
 					</div>
-					<div className="testimonials-card-item">
-					<img src={TestimonialImage2} alt="testimonial" />
-						<p>his</p>
-					</div>
-					<p className="testimonial-card-description">
-						This is a basic review of the restaurant
-					</p>
-				</div>
-				<div className="testimonial-card-3">
-					<div className="testimonial-rating">
-					<img src={Star} alt="star" />
-					<img src={Star} alt="star" />
-					<img src={Star} alt="star" />
-					</div>
-					<div className="testimonials-card-item">
-					<img src={TestimonialImage3} alt="testimonial" />
-						<p>his</p>
-					</div>
-					<p className="testimonial-card-description">
-						This is a basic review of the restaurant
-					</p>
-				</div>
-				<div className="testimonial-card-4">
-					<div className="testimonial-rating">
-					<img src={Star} alt="star" />
-					<img src={Star} alt="star" />
-					<img src={Star} alt="star" />
-					<img src={Star} alt="star" />
-					</div>
-					<div className="testimonials-card-item">
-					<img src={TestimonialImage4} alt="testimonial" />
-						<p>hi</p>
-					</div>
-					<p className="testimonial-card-description">
-						This is a basic review of the restaurant
-					</p>
 				</div>
 			</div>
 		</>
