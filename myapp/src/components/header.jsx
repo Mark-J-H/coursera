@@ -15,7 +15,6 @@ function Header() {
 						We are a family owned Mediterranean restaurant focused on
 						traditional recipes served with a modern twist.{" "}
 					</p>
-					<button>Reserve Your Table</button>
 				</div>
 				<div className="header-right-content">
 					<img src={HeroImage} alt="Header" />

@@ -7,12 +7,14 @@ import TestimonialImage2 from "../assets/testimonial2.jpg";
 import TestimonialImage3 from "../assets/testimonial3.jpg";
 import TestimonialImage4 from "../assets/testimonial4.jpg";
 import AboutImage from "../assets/aboutimage.jpg";
+import RestoImage from "../assets/restaurant.jpg";
 
 function Main() {
 	return (
 		<>
 			<Specials />
-			<Test />
+			<Testimonials />
+			<About />
 		</>
 	);
 }
@@ -66,7 +68,7 @@ function Specials() {
 	);
 }
 
-function Test() {
+function Testimonials() {
 	return (
 		<div className="all-testimonials">
 			<div className="testimonials-title-and-button">
@@ -114,77 +116,28 @@ function Test() {
 	);
 }
 
-function Testimonials() {
-	return (
-		<>
-			<div className="main-testimonials">
-				<h1>Testimonials</h1>
-				<div className="testimonial-cards">
-					<div className="testimonial-card-1">
-						<div className="testimonial-rating">
-							<img src={Star} alt="star" />
-							<img src={Star} alt="star" />
-							<img src={Star} alt="star" />
-						</div>
-
-						<div className="testimonials-card-item">
-							<img src={TestimonialImage1} alt="testimonial" />
-
-							<p className="testimonial-card-description">
-								Great Food! Great People! Love it! Would highly recommend!
-							</p>
-						</div>
-					</div>
-					<div className="testimonial-card-2">
-						<div className="testimonial-rating">
-							<img src={Star} alt="star" />
-							<img src={Star} alt="star" />
-							<img src={Star} alt="star" />
-						</div>
-						<div className="testimonials-card-item">
-							<img src={TestimonialImage2} alt="testimonial" />
-
-							<p className="testimonial-card-description">
-								I came with my friends for my birthday and everyone had a great
-								time!
-							</p>
-						</div>
-					</div>
-					<div className="testimonial-card-3">
-						<div className="testimonial-rating">
-							<img src={Star} alt="star" />
-							<img src={Star} alt="star" />
-							<img src={Star} alt="star" />
-						</div>
-						<div className="testimonials-card-item">
-							<img src={TestimonialImage3} alt="testimonial" />
-
-							<p className="testimonial-card-description">
-								Very reasonably priced for the service. I would recommend to
-								everyone.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</>
-	);
-}
-
 function About() {
 	return (
-		<>
-			<div className="about-container">
-				<div className="about-content">
-					<h1>Little Lemon</h1>
-					<h2>Chicago</h2>
-					<p>This is some text.</p>
+		<div className="about-background">
+			<div className="about">
+				<div className="about-left-content">
+					<div className="titles">
+						<h1>Little Lemon</h1>
+						<h2>Chicago</h2>
+					</div>
+					<p>
+						Nestled in the heart of our community, our family-owned
+						Mediterranean restaurant is a culinary oasis where heritage meets
+						innovation. For generations, we've cherished the rich tapestry of
+						Mediterranean flavors, and today, we are proud to share these
+						traditional recipes with a contemporary flair.{" "}
+					</p>
 				</div>
-				<div className="about-image">
-					<img src={AboutImage} alt="Header" />
+				<div className="about-right-content">
+					<img src={RestoImage} alt="About" />
 				</div>
 			</div>
-		</>
+		</div>
 	);
 }
 
