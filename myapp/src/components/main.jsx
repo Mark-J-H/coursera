@@ -111,6 +111,19 @@ function Testimonials() {
 						everyone.
 					</p>
 				</div>
+				<div className="testimonials-card3">
+					<div className="testimonials-rating">
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+						<img className="star-img" src={Star} alt="star" />
+					</div>
+					<img src={TestimonialImage4} alt="testimonial" />
+					<p className="testimonials-card-description">
+						Very reasonably priced for the service. I would recommend to
+						everyone.
+					</p>
+				</div>
 			</div>
 		</div>
 	);
