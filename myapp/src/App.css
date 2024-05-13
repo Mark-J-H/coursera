@@ -65,11 +65,9 @@ body {
 	padding-top: 10px;
 	height: 100%;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	background: linear-gradient(
-		to bottom,
-		rgba(244, 206, 20, 1),
-		rgba(244, 206, 20, 0.9)
-	);
+	background: linear-gradient(to bottom,
+			rgba(244, 206, 20, 1),
+			rgba(244, 206, 20, 0.9));
 	/* Gradient effect */
 }
 
@@ -377,7 +375,7 @@ body {
 		display: flex;
 		flex-direction: row;
 		gap: 25px;
-		max-width: 1250px;
+		max-width: 1000px;
 		padding-bottom: 25px;
 		margin: 0 auto;
 	}
@@ -409,7 +407,9 @@ body {
 }
 
 .all-testimonials {
+	margin-top: 25px;
 	margin-bottom: 15px;
+	background-color: #F0F0F0;
 }
 
 .testimonials-title-and-button {
@@ -417,8 +417,23 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	padding: 30px 20px 30px 20px;
+	padding: 10px 20px 10px 20px;
 	font-size: 14px;
+}
+
+.testimonials-img-and-text-wrapper {
+	margin-top: 10px;
+	display: flex;
+	height: 100%;
+	align-items: center;
+}
+
+.testimonials-img-and-text {
+	display: flex;
+	flex-direction: row;
+    align-items: center;
+	justify-content: center;
+	width: 100%;
 }
 
 .testimonials-rating {
@@ -428,29 +443,24 @@ body {
 	justify-content: center;
 }
 
-.testimonials-rating .star-img {
-	height: 20px;
-	width: auto;
-	padding-bottom: 10px;
-}
-
 .testimonials-cards {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
-	gap: 10px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
 
-.testimonials-cards img {
-	width: 100%;
-	height: auto;
-	border-radius: 5px;
-	border-radius: 10px;
+.testimonials-img-and-text img {
+	width: 60px;
+	height: 60px;
+	border-radius: 100%;
+	margin-left: 5px;
+	margin-bottom: 5px;
+			margin-right: 5px;
 }
 
-.testimonials-card1 {
+.testimonials-card {
 	flex: 1;
 	display: flex;
 	flex-direction: column;
@@ -458,42 +468,56 @@ body {
 	object-fit: contain;
 	height: auto;
 	border-radius: 10px;
-}
-
-.testimonials-card2 {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	object-fit: contain;
-	height: auto;
-	border-radius: 10px;
-}
-
-.testimonials-card3 {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	object-fit: contain;
-	height: auto;
-	border-radius: 10px;
+	background-color: white;
+	margin: 10px;
 }
 
 .testimonials-card-description {
 	text-align: center;
-	padding: 15px 5px 10px 5px;
 	font-size: 16px;
 	height: 100%;
+	margin-right: 10px;
+}
+
+.testimonials-rating .star-img {
+	height: 20px;
+	width: auto;
+	margin-top: 5px;
 }
 
 @media screen and (min-width: 1025px) {
+
+	.all-testimonials {
+		max-width: 1250px;
+		margin: 0 auto;
+		margin-top: 25px;
+		border-radius: 10px;
+	}
+
+	.testimonials-img-and-text-wrapper {
+		height: 100%;
+		align-items: center;
+	}
+
+	.testimonials-img-and-text {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 60px;
+		margin-left: 5px;
+		margin-right: 5px
+	}
+
+	.testimonials-img-and-text img{
+		margin-right: 5px
+	}
+
 	.testimonials-title-and-button {
 		display: flex;
 		margin: 0 auto;
 		padding-top: 40x;
-		padding-bottom: 30px;
-		max-width: 1100px;
+		padding: 35px 20px 30px 20px;
+		max-width: 1000px;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -501,26 +525,29 @@ body {
 	.testimonials-cards {
 		display: flex;
 		flex-direction: row;
-		gap: 25px;
-		max-width: 1250px;
-		padding-bottom: 25px;
+		gap: 1px;
+		max-width: 1000px;
 		margin: 0 auto;
+		height: 250px;
+	}
+	.testimonials-card {
+		margin-bottom: 25px;
 	}
 
 	.testimonials-rating .star-img {
-		height: 30px;
+		height: 20px;
 		width: auto;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
 	.testimonials-card-description {
 		font-size: 20px;
-		padding: 10px 20px;
 	}
 }
 
 .about {
 	display: flex;
-	background-color: #d3d3d3;
 	height: 245px;
 	justify-content: center;
 }
@@ -600,8 +627,14 @@ body {
 	.about-right-content img {
 		width: 450px;
 		border-radius: 10px;
-		border-color: black;
-		border-style: solid;
 		border-width: 1px;
+	}
+
+	.squiggly-line {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
