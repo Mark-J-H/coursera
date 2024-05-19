@@ -1,4 +1,4 @@
-import FooterImage from '../assets/footer.jpg'
+import FooterImage from "../assets/footer.jpg";
 
 function Footer() {
 	return (
@@ -6,7 +6,7 @@ function Footer() {
 			<div className="footer-image">
 				<img src={FooterImage} alt="Header" />
 			</div>
-			<div className="footer-content">
+			<div className="footer-text-content">
 				<div className="footer-category">
 					<h4>Navigation</h4>
 					<ul>
@@ -16,16 +16,16 @@ function Footer() {
 						<li>
 							<a href="#category">About</a>
 						</li>
-            <li>
+						<li>
 							<a href="#category">Menu</a>
 						</li>
-            <li>
+						<li>
 							<a href="#category">Reservations</a>
 						</li>
-            <li>
+						<li>
 							<a href="#category">Order Online</a>
 						</li>
-            <li>
+						<li>
 							<a href="#category">Login</a>
 						</li>
 					</ul>
@@ -39,7 +39,7 @@ function Footer() {
 						<li>
 							<a href="#category">Phone</a>
 						</li>
-            <li>
+						<li>
 							<a href="#category">Email</a>
 						</li>
 					</ul>
@@ -53,7 +53,7 @@ function Footer() {
 						<li>
 							<a href="#category">Phone</a>
 						</li>
-            <li>
+						<li>
 							<a href="#category">Email</a>
 						</li>
 					</ul>

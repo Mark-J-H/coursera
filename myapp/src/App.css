@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap");
 
 /*Basic settings for the webpage in all modes*/
-* {
-	padding: 0;
-	margin: 0;
-}
-
-/*Basic settings for the webpage in all modes*/
 body {
 	font-family: "Markazi Text", serif;
 	padding: 0;
@@ -124,7 +118,7 @@ body {
 		font-family: "Markazi Text", serif;
 		text-decoration: none;
 		font-size: 21px;
-		color: #495e57;
+		color: black;
 		padding: 5px 0;
 	}
 
@@ -407,9 +401,11 @@ body {
 }
 
 .all-testimonials {
-	margin-top: 25px;
+	margin-top: 15px;
 	margin-bottom: 15px;
-	background-color: #F0F0F0;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
 }
 
 .testimonials-title-and-button {
@@ -431,7 +427,7 @@ body {
 .testimonials-img-and-text {
 	display: flex;
 	flex-direction: row;
-    align-items: center;
+	align-items: center;
 	justify-content: center;
 	width: 100%;
 }
@@ -457,7 +453,7 @@ body {
 	border-radius: 100%;
 	margin-left: 5px;
 	margin-bottom: 5px;
-			margin-right: 5px;
+	margin-right: 5px;
 }
 
 .testimonials-card {
@@ -485,13 +481,19 @@ body {
 	margin-top: 5px;
 }
 
+.testimonials-card {
+	background-color: rgb(232, 232, 232);
+}
+
 @media screen and (min-width: 1025px) {
 
 	.all-testimonials {
-		max-width: 1250px;
+		max-width: 1000px;
 		margin: 0 auto;
 		margin-top: 25px;
 		border-radius: 10px;
+		height: 400;
+		background-image: none;
 	}
 
 	.testimonials-img-and-text-wrapper {
@@ -505,10 +507,10 @@ body {
 		align-items: center;
 		margin-bottom: 60px;
 		margin-left: 5px;
-		margin-right: 5px
+		margin-right: 5px;
 	}
 
-	.testimonials-img-and-text img{
+	.testimonials-img-and-text img {
 		margin-right: 5px
 	}
 
@@ -516,10 +518,14 @@ body {
 		display: flex;
 		margin: 0 auto;
 		padding-top: 40x;
-		padding: 35px 20px 30px 20px;
+		padding: 10px 20px 10px 20px;
 		max-width: 1000px;
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.testimonials-card {
+		background-color: rgb(232, 232, 232);
 	}
 
 	.testimonials-cards {
@@ -529,9 +535,6 @@ body {
 		max-width: 1000px;
 		margin: 0 auto;
 		height: 250px;
-	}
-	.testimonials-card {
-		margin-bottom: 25px;
 	}
 
 	.testimonials-rating .star-img {
@@ -548,7 +551,7 @@ body {
 
 .about {
 	display: flex;
-	height: 245px;
+	height: 275px;
 	justify-content: center;
 }
 
@@ -614,11 +617,9 @@ body {
 		color: black;
 		max-width: 300px;
 		overflow: hidden;
-		margin-bottom: 30px;
 	}
 
 	.about-right-content {
-		margin-top: 75px;
 		display: flex;
 		object-fit: cover;
 		margin-right: 140px;
@@ -636,5 +637,80 @@ body {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(assets/aboutimage.jpg);
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+.footer-image img {
+	display: none;
+}
+
+.footer-text-content {
+	z-index: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 18px;
+	color: white;
+}
+
+.footer-text-content ul {
+	list-style-type: none;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.footer-text-content a {
+	text-decoration: none;
+	color: white;
+}
+
+.footer-category {
+	padding: 20px;
+}
+
+@media screen and (min-width: 1025px) {
+	.footer-container {
+		margin: 0 auto;
+		height: 300px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		max-width: 1250px;
+		border-radius: 10px;
+		margin-bottom: 50px;
+	}
+
+	.footer-image img {
+		display: none;
+	}
+
+	.footer-text-content {
+		font-size: 20px;
+		color: white;
+	}
+
+	.footer-text-content ul {
+		list-style-type: none;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+	.footer-text-content a {
+		text-decoration: none;
+		color: white;
+	}
+
+	.footer-category {
+		padding: 20px;
 	}
 }
