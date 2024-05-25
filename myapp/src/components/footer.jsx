@@ -2,35 +2,32 @@ import FooterImage from "../assets/footer.jpg";
 
 function Footer() {
 	return (
-		<div className="footer-container">
-			<div className="footer-image">
-				<img src={FooterImage} alt="Header" />
-			</div>
+		<footer className="footer-container">
 			<div className="footer-text-content">
-				<div className="footer-category">
+				<article className="footer-category">
 					<h4>Navigation</h4>
 					<ul>
 						<li>
-							<a href="#category">Home</a>
+							<a href="#homepage">Home</a>
 						</li>
 						<li>
-							<a href="#category">About</a>
+							<a href="#about">About</a>
 						</li>
 						<li>
-							<a href="#category">Menu</a>
+							<a href="#menu">Menu</a>
 						</li>
 						<li>
-							<a href="#category">Reservations</a>
+							<a href="#reservations">Reservations</a>
 						</li>
 						<li>
-							<a href="#category">Order Online</a>
+							<a href="#order">Order Online</a>
 						</li>
 						<li>
-							<a href="#category">Login</a>
+							<a href="#login">Login</a>
 						</li>
 					</ul>
-				</div>
-				<div className="footer-category">
+				</article>
+				<article className="footer-category">
 					<h4>Contact</h4>
 					<ul>
 						<li>
@@ -43,23 +40,23 @@ function Footer() {
 							<a href="#category">Email</a>
 						</li>
 					</ul>
-				</div>
-				<div className="footer-category">
+				</article>
+				<article className="footer-category">
 					<h4>Social Media Links</h4>
 					<ul>
 						<li>
-							<a href="#category">Address</a>
+							<a href="#category">Instagram</a>
 						</li>
 						<li>
-							<a href="#category">Phone</a>
+							<a href="#category">Facebook</a>
 						</li>
 						<li>
-							<a href="#category">Email</a>
+							<a href="#category">Twitter</a>
 						</li>
 					</ul>
-				</div>
+				</article>
 			</div>
-		</div>
+		</footer>
 	);
 }
 

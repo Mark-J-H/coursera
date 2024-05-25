@@ -1,18 +1,20 @@
 import './App.css';
 import Navigation from './components/navigation'
 import Header from './components/header'
-import Main from './components/main'
 import Footer from './components/footer';
+import Specials from './components/specials'
+import Testimonials from './components/testimonials'
+import About from './components/about'
 
 
 function App() {
   return (
     <>
-    <div className="nav-and-header">
     <Navigation/>
     <Header/>
-    </div>
-    <Main/>
+    <Specials/>
+    <Testimonials/>
+    <About/>
     <Footer/>
     </>
   );

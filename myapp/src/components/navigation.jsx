@@ -1,13 +1,12 @@
 import Logo from "../assets/logo.svg";
 import { Link, BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import Homepage from "../pages/homepage";
 import Login from "../pages/login";
 import Reservations from "../pages/reservations";
 import Menu from "../pages/menu";
 import Order from "../pages/order";
 import About from "../pages/about";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function Navigation() {
 	const [isSidebarVisible, setIsSidebarVisible] = useState(false);
@@ -32,9 +31,8 @@ function Navigation() {
 
 	return (
 		<Router>
-			<nav>
-				<div className="navbar-menu">
-
+			<header>
+				<nav className="navbar-menu">
 					<Link to="/">
 						<img src={Logo} alt="logo" />
 					</Link>
@@ -43,9 +41,7 @@ function Navigation() {
 					</div>
 					<ul id="nav-list" className={`navbar-links ${isSidebarVisible ? 'show' : ''}`}>
 						<li className="nav-li">
-							<Link className="active-menu" to="/Home">
-								Homepage
-							</Link>
+							<Link className="active-menu" to="/Home">Homepage</Link>
 						</li>
 						<li className="nav-li">
 							<Link to="/About">About</Link>
@@ -63,19 +59,22 @@ function Navigation() {
 							<Link to="/Login">Login</Link>
 						</li>
 					</ul>
-				</div>
-			</nav>
-			<Routes>
-				<Route path="/" element={<Homepage />} />
-				<Route path="/Home" element={<Homepage />} />
-				<Route path="/About" element={<About />} />
-				<Route path="/Menu" element={<Menu />} />
-				<Route path="/Reservations" element={<Reservations />} />
-				<Route path="/Order" element={<Order />} />
-				<Route path="/Login" element={<Login />} />
-			</Routes>
+				</nav>
+			</header>
+			<main>
+				<Routes>
+					<Route path="/" element={<Homepage />} />
+					<Route path="/Home" element={<Homepage />} />
+					<Route path="/About" element={<About />} />
+					<Route path="/Menu" element={<Menu />} />
+					<Route path="/Reservations" element={<Reservations />} />
+					<Route path="/Order" element={<Order />} />
+					<Route path="/Login" element={<Login />} />
+				</Routes>
+			</main>
 		</Router>
 	);
 }
+
 
 export default Navigation;
