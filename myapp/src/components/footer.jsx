@@ -2,10 +2,10 @@ import FooterImage from "../assets/footer.jpg";
 
 function Footer() {
 	return (
-		<footer className="footer-container">
+		<footer className="footer-container" role="contentinfo">
 			<div className="footer-text-content">
-				<article className="footer-category">
-					<h4>Navigation</h4>
+				<article className="footer-category" aria-labelledby="navigation-heading">
+					<h4 id="navigation-heading">Navigation</h4>
 					<ul>
 						<li>
 							<a href="#homepage">Home</a>
@@ -27,31 +27,31 @@ function Footer() {
 						</li>
 					</ul>
 				</article>
-				<article className="footer-category">
-					<h4>Contact</h4>
+				<article className="footer-category" aria-labelledby="contact-heading">
+					<h4 id="contact-heading">Contact</h4>
 					<ul>
 						<li>
-							<a href="#category">Address</a>
+							<a href="#address">Address</a>
 						</li>
 						<li>
-							<a href="#category">Phone</a>
+							<a href="#phone">Phone</a>
 						</li>
 						<li>
-							<a href="#category">Email</a>
+							<a href="#email">Email</a>
 						</li>
 					</ul>
 				</article>
-				<article className="footer-category">
-					<h4>Social Media Links</h4>
+				<article className="footer-category" aria-labelledby="social-media-heading">
+					<h4 id="social-media-heading">Social Media Links</h4>
 					<ul>
 						<li>
-							<a href="#category">Instagram</a>
+							<a href="#instagram">Instagram</a>
 						</li>
 						<li>
-							<a href="#category">Facebook</a>
+							<a href="#facebook">Facebook</a>
 						</li>
 						<li>
-							<a href="#category">Twitter</a>
+							<a href="#twitter">Twitter</a>
 						</li>
 					</ul>
 				</article>

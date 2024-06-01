@@ -34,8 +34,11 @@ body {
     font-size: 2.5rem;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0.625rem;
     color: rgb(84, 84, 84);
+    background-color: white;
+    border: none;
 }
 
 .rotate {
@@ -76,7 +79,6 @@ body {
 }
 
 @media screen and (min-width: 64.0625rem) {
-
     .navbar-menu {
         display: flex;
         height: 7.8125rem;
@@ -669,4 +671,57 @@ body {
     .footer-category {
         padding: 1.25rem;
     }
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    max-width: 19rem;
+    margin: 2rem auto;
+}
+
+.booking-form h1 {
+    font-family: "Markazi Text", serif;
+    color: #495e57;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.booking-form label {
+    font-family: "Markazi Text", serif;
+    color: #495e57;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.booking-form input,
+.booking-form select {
+    font-family: "Markazi Text", serif;
+    width: 100%;
+    padding: 0.625rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #d1d1d1;
+    border-radius: 0.3125rem;
+    font-size: 1rem;
+}
+
+.booking-form button {
+    background-color: #f4ce14;
+    border: none;
+    font-family: "Markazi Text", serif;
+    font-size: 1.25rem;
+    padding: 0.9375rem 1.875rem;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-form button:hover {
+    background-color: #ede18f;
 }

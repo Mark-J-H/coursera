@@ -1,7 +1,12 @@
-function Reservations () {
-    return (
-    <p></p>
-    )
+
+import BookingForm from "../components/bookingform";
+
+function Reservations({availableTimes, dispatch}) {
+	return (
+		<>
+			<BookingForm availableTimes={availableTimes} dispatch={dispatch} />
+		</>
+	);
 }
 
-export default Reservations
+export default Reservations;
