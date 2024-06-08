@@ -725,3 +725,35 @@ body {
 .booking-form button:hover {
     background-color: #ede18f;
 }
+
+.confirmation-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    max-width: 19rem;
+    margin: 2rem auto;
+}
+
+.confirmation-page h1 {
+    font-family: "Markazi Text", serif;
+    color: #495e57;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.confirmation-details {
+    font-family: "Markazi Text", serif;
+    color: #495e57;
+    font-size: 1.25rem;
+    text-align: left;
+    width: 100%;
+}
+
+.confirmation-details p {
+    margin-bottom: 0.625rem;
+}

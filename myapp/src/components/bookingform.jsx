@@ -1,19 +1,64 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { loadScript } from '../utils/loadscript';
+import { useNavigate } from 'react-router-dom';
 
 const BookingForm = ({ availableTimes, dispatch }) => {
     const [date, setDate] = useState('');
     const [time, setTime] = useState('');
     const [guests, setGuests] = useState(1);
     const [occasion, setOccasion] = useState('');
+    const [apiLoaded, setApiLoaded] = useState(false);
+    const [isValid, setIsValid] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        loadScript('./api.js')
+            .then(() => {
+                if (window.fetchAPI && window.submitAPI) {
+                    setApiLoaded(true);
+                } else {
+                    console.error('API functions not found on window object');
+                }
+            })
+            .catch((error) => {
+                console.error('Error loading API script:', error);
+            });
+    }, []);
+
+    useEffect(() => {
+        const isFormValid = date && time && guests >= 1 && occasion;
+        setIsValid(isFormValid);
+    }, [date, time, guests, occasion]);
 
     const handleDateChange = (e) => {
         setDate(e.target.value);
-        dispatch({ type: 'UPDATE', date: e.target.value });
+        if (apiLoaded) {
+            const selectedDate = new Date(e.target.value);
+            const fetchedTimes = window.fetchAPI(selectedDate);
+            dispatch({ type: 'UPDATE', payload: fetchedTimes });
+        } else {
+            console.error('API script not loaded yet');
+        }
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        dispatch({ type: 'RESERVE', payload: time });
+        const reservationDetails = {
+            date,
+            time,
+            guests,
+            occasion,
+        };
+        if (apiLoaded) {
+            const success = window.submitAPI(reservationDetails);
+            if (success) {
+                navigate('/confirmation', { state: { reservationDetails } });
+            } else {
+                console.error('Failed to submit reservation');
+            }
+        } else {
+            console.error('API script not loaded yet');
+        }
     };
 
     return (
@@ -27,6 +72,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
                     value={date}
                     onChange={handleDateChange}
                     required
+                    min={new Date().toISOString().split('T')[0]}
                     aria-required="true"
                 />
             </div>
@@ -74,7 +120,7 @@ const BookingForm = ({ availableTimes, dispatch }) => {
                     <option value="Other">Other</option>
                 </select>
             </div>
-            <button type="submit">Submit reservation</button>
+            <button type="submit" disabled={!isValid}>Submit reservation</button>
         </form>
     );
 };
