@@ -1,6 +1,13 @@
 import HeroImage from "../assets/bruchetta.svg";
+import {useNavigate} from 'react-router-dom';
 
 function Header() {
+
+	const navigate = useNavigate();
+	const handleButtonClick = () => {
+		navigate('/Reservations');
+		}
+
 	return (
 		<header className="header-background" role="banner">
 			<div className="header">
@@ -12,7 +19,7 @@ function Header() {
 					<p>
 						We are a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
 					</p>
-					<button aria-label="Reserve your table at Little Lemon">Reserve Your Table</button>
+					<button aria-label="Reserve your table at Little Lemon" onClick={handleButtonClick}>Reserve Your Table</button>
 				</div>
 				<div className="header-right-content">
 					<img src={HeroImage} alt="Bruchetta dish served at Little Lemon restaurant" />

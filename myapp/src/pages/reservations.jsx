@@ -1,7 +1,7 @@
 
 import BookingForm from "../components/bookingform";
 
-function Reservations({availableTimes, dispatch}) {
+export function Reservations({availableTimes, dispatch}) {
 	return (
 		<>
 			<BookingForm availableTimes={availableTimes} dispatch={dispatch} />
