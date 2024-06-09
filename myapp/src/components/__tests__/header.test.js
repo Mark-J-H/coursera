@@ -8,7 +8,7 @@ describe('Header Component', () => {
     render(<Header />);
   });
 
-  test('renders the header with role banner', () => {
+  test('renders the header', () => {
     const headerElement = screen.getByRole('banner');
     expect(headerElement).toBeInTheDocument();
   });
@@ -28,7 +28,7 @@ describe('Header Component', () => {
     expect(description).toBeInTheDocument();
   });
 
-  test('renders the reserve button with correct aria-label', () => {
+  test('renders the reserve button with aria-label', () => {
     const reserveButton = screen.getByRole('button', { name: /Reserve your table at Little Lemon/i });
     expect(reserveButton).toBeInTheDocument();
   });

@@ -4,7 +4,7 @@ import About from '../about';
 import AboutImage from '../../assets/aboutimage.jpg';
 
 describe('About Component', () => {
-  test('renders the section with correct aria-labelledby', () => {
+  test('renders the section with correct aria-label', () => {
     render(<About />);
     const sectionElement = screen.getByRole('region', { name: 'Little Lemon' });
     expect(sectionElement).toBeInTheDocument();
@@ -16,7 +16,7 @@ describe('About Component', () => {
     expect(titleElement).toBeInTheDocument();
   });
 
-  test('renders the decorative squiggly line', () => {
+  test('renders the squiggly line', () => {
     render(<About />);
     const svgElement = screen.getByRole('img', { name: 'Decorative squiggly line' });
     expect(svgElement).toBeInTheDocument();
@@ -30,7 +30,7 @@ describe('About Component', () => {
     expect(paragraphElement).toBeInTheDocument();
   });
 
-  test('renders the image with correct alt text', () => {
+  test('renders the image with alt text', () => {
     render(<About />);
     const imageElement = screen.getByAltText('About');
     expect(imageElement).toBeInTheDocument();

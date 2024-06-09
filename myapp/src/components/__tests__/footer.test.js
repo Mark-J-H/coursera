@@ -12,7 +12,7 @@ describe('Footer Component', () => {
     expect(footerElement).toBeInTheDocument();
   });
 
-  test('renders the navigation section with correct heading', () => {
+  test('renders the navigation section', () => {
     const navigationHeading = screen.getByRole('heading', { name: 'Navigation' });
     expect(navigationHeading).toBeInTheDocument();
     const navigationLinks = ['Home', 'About', 'Menu', 'Reservations', 'Order Online', 'Login'];
@@ -21,7 +21,7 @@ describe('Footer Component', () => {
     });
   });
 
-  test('renders the contact section with correct heading', () => {
+  test('renders the contact section', () => {
     const contactHeading = screen.getByRole('heading', { name: 'Contact' });
     expect(contactHeading).toBeInTheDocument();
     const contactLinks = ['Address', 'Phone', 'Email'];
@@ -30,7 +30,7 @@ describe('Footer Component', () => {
     });
   });
 
-  test('renders the social media section with correct heading', () => {
+  test('renders the social media section', () => {
     const socialMediaHeading = screen.getByRole('heading', { name: 'Social Media Links' });
     expect(socialMediaHeading).toBeInTheDocument();
     const socialMediaLinks = ['Instagram', 'Facebook', 'Twitter'];
